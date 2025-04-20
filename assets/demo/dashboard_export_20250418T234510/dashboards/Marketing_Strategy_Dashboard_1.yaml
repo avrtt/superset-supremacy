@@ -1,0 +1,374 @@
+dashboard_title: Marketing Strategy Dashboard
+description: null
+css: ''
+slug: null
+uuid: 9ddf7fb5-5da4-42ca-a2fa-783476a6116c
+position:
+  CHART-2svbXmnCRAH:
+    children: []
+    id: CHART-2svbXmnCRAH
+    meta:
+      chartId: 12
+      height: 65
+      sliceName: Budget Utilization
+      uuid: aeb0eb4e-ddee-4a1e-a370-06d25e6646b4
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-jjkA-uaQRZ
+    type: CHART
+  CHART-5HL84Ders_0:
+    children: []
+    id: CHART-5HL84Ders_0
+    meta:
+      chartId: 11
+      height: 65
+      sliceName: Budget vs Actual Spend
+      uuid: 988fb44f-fdda-44d4-9759-79bbafc50e64
+      width: 7
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-jjkA-uaQRZ
+    type: CHART
+  CHART-5cQ3ZAUn_gp:
+    children: []
+    id: CHART-5cQ3ZAUn_gp
+    meta:
+      chartId: 13
+      height: 79
+      sliceName: Predicted vs Actual ROI
+      uuid: 28cd1376-e584-4f15-bdc5-36e571d917f0
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-zxzlA1JBUH5
+    type: CHART
+  CHART-8obwBGUJfWV:
+    children: []
+    id: CHART-8obwBGUJfWV
+    meta:
+      chartId: 1
+      height: 41
+      sliceName: Total Marketing Spend
+      uuid: 43d620f4-3dd2-44c5-82f7-6a18ecb079cf
+      width: 10
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Y_ePbTB_L_L
+    type: CHART
+  CHART-Gpzh3-Us4PI:
+    children: []
+    id: CHART-Gpzh3-Us4PI
+    meta:
+      chartId: 9
+      height: 67
+      sliceName: Marketing Funnel
+      uuid: 411242d5-1ae4-4355-82c8-eed1e5ed66db
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-rmXF_ASYYK
+    type: CHART
+  CHART-I3TZGlzZbys:
+    children: []
+    id: CHART-I3TZGlzZbys
+    meta:
+      chartId: 8
+      height: 77
+      sliceName: CAC by Channel
+      uuid: b052f191-cb6e-4752-af85-b8916be2e729
+      width: 8
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-ge6xC17sSXq
+    type: CHART
+  CHART-I4n2S40a05H:
+    children: []
+    id: CHART-I4n2S40a05H
+    meta:
+      chartId: 5
+      height: 26
+      sliceName: Forecast Accuracy
+      uuid: 2dab9710-7f8e-401b-9643-7b2e65fd2a6a
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-o90NFcAT5Y
+    type: CHART
+  CHART-JyvN5AVfuFa:
+    children: []
+    id: CHART-JyvN5AVfuFa
+    meta:
+      chartId: 10
+      height: 67
+      sliceName: Conversion Rates by Channel
+      uuid: 6895d394-de8c-4088-a6d2-9e617536e37d
+      width: 8
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-rmXF_ASYYK
+    type: CHART
+  CHART-K8xTXxkjIxZ:
+    children: []
+    id: CHART-K8xTXxkjIxZ
+    meta:
+      chartId: 2
+      height: 26
+      sliceName: Overall ROAS
+      uuid: e5f6eca1-f45e-41db-8c4c-cf57f074bb9b
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-o90NFcAT5Y
+    type: CHART
+  CHART-Lw9MjTrO94y:
+    children: []
+    id: CHART-Lw9MjTrO94y
+    meta:
+      chartId: 14
+      height: 109
+      sliceName: Forecast Accuracy Trend
+      uuid: 9d016776-ca80-4c2f-a52f-0afdb92a5233
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-q1n8GokEnS
+    type: CHART
+  CHART-SfPtFoLMFZY:
+    children: []
+    id: CHART-SfPtFoLMFZY
+    meta:
+      chartId: 7
+      height: 77
+      sliceName: Channel ROI Comparison
+      uuid: 88c97178-956c-4833-993b-17ecc5ae65d6
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-ge6xC17sSXq
+    type: CHART
+  CHART-WhzpiS7Q7F9:
+    children: []
+    id: CHART-WhzpiS7Q7F9
+    meta:
+      chartId: 3
+      height: 26
+      sliceName: Overall ROI
+      uuid: 18774712-687f-418f-a409-abf4d5364806
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-o90NFcAT5Y
+    type: CHART
+  CHART-q-1wFq8ygwt:
+    children: []
+    id: CHART-q-1wFq8ygwt
+    meta:
+      chartId: 6
+      height: 76
+      sliceName: ROI Trend by Channel
+      uuid: c3cdfcc7-a496-47f1-8452-39700b58d090
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-BqaEYgme2F
+    type: CHART
+  CHART-ykDUtK_X-YH:
+    children: []
+    id: CHART-ykDUtK_X-YH
+    meta:
+      chartId: 4
+      height: 41
+      sliceName: Average CAC
+      uuid: f274c767-6918-4f03-9836-37ba294a0d56
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Y_ePbTB_L_L
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - ROW-Y_ePbTB_L_L
+    - ROW-o90NFcAT5Y
+    - ROW-BqaEYgme2F
+    - ROW-ge6xC17sSXq
+    - ROW-rmXF_ASYYK
+    - ROW-jjkA-uaQRZ
+    - ROW-zxzlA1JBUH5
+    - ROW-q1n8GokEnS
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Marketing Strategy Dashboard
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-BqaEYgme2F:
+    children:
+    - CHART-q-1wFq8ygwt
+    id: ROW-BqaEYgme2F
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-Y_ePbTB_L_L:
+    children:
+    - CHART-8obwBGUJfWV
+    - CHART-ykDUtK_X-YH
+    id: ROW-Y_ePbTB_L_L
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-ge6xC17sSXq:
+    children:
+    - CHART-SfPtFoLMFZY
+    - CHART-I3TZGlzZbys
+    id: ROW-ge6xC17sSXq
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-jjkA-uaQRZ:
+    children:
+    - CHART-5HL84Ders_0
+    - CHART-2svbXmnCRAH
+    id: ROW-jjkA-uaQRZ
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-o90NFcAT5Y:
+    children:
+    - CHART-K8xTXxkjIxZ
+    - CHART-WhzpiS7Q7F9
+    - CHART-I4n2S40a05H
+    id: ROW-o90NFcAT5Y
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-q1n8GokEnS:
+    children:
+    - CHART-Lw9MjTrO94y
+    id: ROW-q1n8GokEnS
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-rmXF_ASYYK:
+    children:
+    - CHART-Gpzh3-Us4PI
+    - CHART-JyvN5AVfuFa
+    id: ROW-rmXF_ASYYK
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-zxzlA1JBUH5:
+    children:
+    - CHART-5cQ3ZAUn_gp
+    id: ROW-zxzlA1JBUH5
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  timed_refresh_immune_slices: []
+  expanded_slices: {}
+  refresh_frequency: 3600
+  color_scheme: supersetColors
+  label_colors:
+    Facebook: '#1F77B4'
+    Google: '#2CA02C'
+    Instagram: '#9467BD'
+    LinkedIn: '#FF7F0E'
+    TikTok: '#D62728'
+    Twitter: '#8C564B'
+    YouTube: '#E377C2'
+  shared_label_colors:
+    '1': '#1FA8C9'
+    '2': '#454E7C'
+    '3': '#FF7F44'
+    '4': '#5AC189'
+    Email: '#1FA8C9'
+    Facebook: '#1F77B4'
+    Google: '#2CA02C'
+    Instagram: '#9467BD'
+    LinkedIn: '#FF7F0E'
+    TikTok: '#D62728'
+    Twitter: '#8C564B'
+    YouTube: '#E377C2'
+    AVG(cac): '#1FA8C9'
+    Average Budget Utilization: '#1FA8C9'
+    Avg. Actual ROI: '#1FA8C9'
+    Avg. Predicted ROI: '#454E7C'
+    "Awareness \u27A1\uFE0F Consideration": '#1FA8C9'
+    "Consideration \u27A1\uFE0F Decision": '#454E7C'
+    Overall Conversion: '#5AC189'
+    "\U0001F4B5 Planned": '#1FA8C9'
+    "\U0001F4B8 Actual Spend": '#454E7C'
+  show_native_filters: true
+  color_scheme_domain:
+  - '#1FA8C9'
+  - '#454E7C'
+  - '#5AC189'
+  - '#FF7F44'
+  - '#666666'
+  - '#E04355'
+  - '#FCC700'
+  - '#A868B7'
+  - '#3CCCCB'
+  - '#A38F79'
+  - '#8FD3E4'
+  - '#A1A6BD'
+  - '#ACE1C4'
+  - '#FEC0A1'
+  - '#B2B2B2'
+  - '#EFA1AA'
+  - '#FDE380'
+  - '#D3B3DA'
+  - '#9EE5E5'
+  - '#D1C6BC'
+  cross_filters_enabled: false
+  default_filters: '{}'
+  chart_configuration: {}
+version: 1.0.0

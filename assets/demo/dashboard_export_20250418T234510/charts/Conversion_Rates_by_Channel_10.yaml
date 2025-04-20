@@ -1,0 +1,180 @@
+slice_name: Conversion Rates by Channel
+description: null
+certified_by: null
+certification_details: null
+viz_type: dist_bar
+params:
+  datasource: 4__table
+  viz_type: dist_bar
+  granularity_sqla: date_day
+  time_range: 'Last 90 days : '
+  metrics:
+  - expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: tofu_to_mofu_rate
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 33
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: DOUBLE PRECISION
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    aggregate: AVG
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: true
+    label: "Awareness \u27A1\uFE0F Consideration"
+    optionName: metric_268jcs3vw0d_85d05kup3d9
+  - expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: mofu_to_bofu_rate
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 34
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: DOUBLE PRECISION
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    aggregate: AVG
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: true
+    label: "Consideration \u27A1\uFE0F Decision"
+    optionName: metric_n7ctz9g8p4e_vm2185mrscm
+  - expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: overall_conversion_rate
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 36
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: DOUBLE PRECISION
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    aggregate: AVG
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: true
+    label: Overall Conversion
+    optionName: metric_tu17uy8rjr_tr5nx6uxkeh
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: channel_id
+    operator: <
+    operatorId: LESS_THAN
+    comparator: '5'
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_2niez3eg3tt_cuypikpvdgw
+  groupby:
+  - channel_name
+  columns: []
+  row_limit: 10
+  order_desc: true
+  contribution: false
+  color_scheme: supersetColors
+  show_legend: true
+  rich_tooltip: true
+  y_axis_format: ',.1%'
+  y_axis_label: Conversion Rate
+  y_axis_bounds:
+  - null
+  - null
+  x_axis_label: Channel
+  bottom_margin: auto
+  x_ticks_layout: auto
+  reduce_x_ticks: false
+  extra_form_data: {}
+  dashboards: []
+query_context: "{\"datasource\":{\"id\":4,\"type\":\"table\"},\"force\":false,\"queries\"\
+  :[{\"time_range\":\"Last 90 days : \",\"granularity\":\"date_day\",\"filters\":[{\"\
+  col\":\"channel_id\",\"op\":\"<\",\"val\":\"5\"}],\"extras\":{\"having\":\"\",\"\
+  where\":\"\"},\"applied_time_extras\":{},\"columns\":[\"channel_name\"],\"metrics\"\
+  :[{\"expressionType\":\"SIMPLE\",\"column\":{\"advanced_data_type\":null,\"certification_details\"\
+  :null,\"certified_by\":null,\"column_name\":\"tofu_to_mofu_rate\",\"description\"\
+  :null,\"expression\":null,\"filterable\":true,\"groupby\":true,\"id\":33,\"is_certified\"\
+  :false,\"is_dttm\":false,\"python_date_format\":null,\"type\":\"DOUBLE PRECISION\"\
+  ,\"type_generic\":0,\"verbose_name\":null,\"warning_markdown\":null},\"aggregate\"\
+  :\"AVG\",\"sqlExpression\":null,\"datasourceWarning\":false,\"hasCustomLabel\":true,\"\
+  label\":\"Awareness \u27A1\uFE0F Consideration\",\"optionName\":\"metric_268jcs3vw0d_85d05kup3d9\"\
+  },{\"expressionType\":\"SIMPLE\",\"column\":{\"advanced_data_type\":null,\"certification_details\"\
+  :null,\"certified_by\":null,\"column_name\":\"mofu_to_bofu_rate\",\"description\"\
+  :null,\"expression\":null,\"filterable\":true,\"groupby\":true,\"id\":34,\"is_certified\"\
+  :false,\"is_dttm\":false,\"python_date_format\":null,\"type\":\"DOUBLE PRECISION\"\
+  ,\"type_generic\":0,\"verbose_name\":null,\"warning_markdown\":null},\"aggregate\"\
+  :\"AVG\",\"sqlExpression\":null,\"datasourceWarning\":false,\"hasCustomLabel\":true,\"\
+  label\":\"Consideration \u27A1\uFE0F Decision\",\"optionName\":\"metric_n7ctz9g8p4e_vm2185mrscm\"\
+  },{\"expressionType\":\"SIMPLE\",\"column\":{\"advanced_data_type\":null,\"certification_details\"\
+  :null,\"certified_by\":null,\"column_name\":\"overall_conversion_rate\",\"description\"\
+  :null,\"expression\":null,\"filterable\":true,\"groupby\":true,\"id\":36,\"is_certified\"\
+  :false,\"is_dttm\":false,\"python_date_format\":null,\"type\":\"DOUBLE PRECISION\"\
+  ,\"type_generic\":0,\"verbose_name\":null,\"warning_markdown\":null},\"aggregate\"\
+  :\"AVG\",\"sqlExpression\":null,\"datasourceWarning\":false,\"hasCustomLabel\":true,\"\
+  label\":\"Overall Conversion\",\"optionName\":\"metric_tu17uy8rjr_tr5nx6uxkeh\"\
+  }],\"annotation_layers\":[],\"row_limit\":10,\"series_limit\":0,\"order_desc\":true,\"\
+  url_params\":{},\"custom_params\":{},\"custom_form_data\":{}}],\"form_data\":{\"\
+  datasource\":\"4__table\",\"viz_type\":\"dist_bar\",\"granularity_sqla\":\"date_day\"\
+  ,\"time_range\":\"Last 90 days : \",\"metrics\":[{\"expressionType\":\"SIMPLE\"\
+  ,\"column\":{\"advanced_data_type\":null,\"certification_details\":null,\"certified_by\"\
+  :null,\"column_name\":\"tofu_to_mofu_rate\",\"description\":null,\"expression\"\
+  :null,\"filterable\":true,\"groupby\":true,\"id\":33,\"is_certified\":false,\"is_dttm\"\
+  :false,\"python_date_format\":null,\"type\":\"DOUBLE PRECISION\",\"type_generic\"\
+  :0,\"verbose_name\":null,\"warning_markdown\":null},\"aggregate\":\"AVG\",\"sqlExpression\"\
+  :null,\"datasourceWarning\":false,\"hasCustomLabel\":true,\"label\":\"Awareness\
+  \ \u27A1\uFE0F Consideration\",\"optionName\":\"metric_268jcs3vw0d_85d05kup3d9\"\
+  },{\"expressionType\":\"SIMPLE\",\"column\":{\"advanced_data_type\":null,\"certification_details\"\
+  :null,\"certified_by\":null,\"column_name\":\"mofu_to_bofu_rate\",\"description\"\
+  :null,\"expression\":null,\"filterable\":true,\"groupby\":true,\"id\":34,\"is_certified\"\
+  :false,\"is_dttm\":false,\"python_date_format\":null,\"type\":\"DOUBLE PRECISION\"\
+  ,\"type_generic\":0,\"verbose_name\":null,\"warning_markdown\":null},\"aggregate\"\
+  :\"AVG\",\"sqlExpression\":null,\"datasourceWarning\":false,\"hasCustomLabel\":true,\"\
+  label\":\"Consideration \u27A1\uFE0F Decision\",\"optionName\":\"metric_n7ctz9g8p4e_vm2185mrscm\"\
+  },{\"expressionType\":\"SIMPLE\",\"column\":{\"advanced_data_type\":null,\"certification_details\"\
+  :null,\"certified_by\":null,\"column_name\":\"overall_conversion_rate\",\"description\"\
+  :null,\"expression\":null,\"filterable\":true,\"groupby\":true,\"id\":36,\"is_certified\"\
+  :false,\"is_dttm\":false,\"python_date_format\":null,\"type\":\"DOUBLE PRECISION\"\
+  ,\"type_generic\":0,\"verbose_name\":null,\"warning_markdown\":null},\"aggregate\"\
+  :\"AVG\",\"sqlExpression\":null,\"datasourceWarning\":false,\"hasCustomLabel\":true,\"\
+  label\":\"Overall Conversion\",\"optionName\":\"metric_tu17uy8rjr_tr5nx6uxkeh\"\
+  }],\"adhoc_filters\":[{\"expressionType\":\"SIMPLE\",\"subject\":\"channel_id\"\
+  ,\"operator\":\"<\",\"operatorId\":\"LESS_THAN\",\"comparator\":\"5\",\"clause\"\
+  :\"WHERE\",\"sqlExpression\":null,\"isExtra\":false,\"isNew\":false,\"datasourceWarning\"\
+  :false,\"filterOptionName\":\"filter_2niez3eg3tt_cuypikpvdgw\"}],\"groupby\":[\"\
+  channel_name\"],\"columns\":[],\"row_limit\":10,\"order_desc\":true,\"contribution\"\
+  :false,\"color_scheme\":\"supersetColors\",\"show_legend\":true,\"rich_tooltip\"\
+  :true,\"y_axis_format\":\",.1%\",\"y_axis_label\":\"Conversion Rate\",\"y_axis_bounds\"\
+  :[null,null],\"x_axis_label\":\"Channel\",\"bottom_margin\":\"auto\",\"x_ticks_layout\"\
+  :\"auto\",\"reduce_x_ticks\":false,\"extra_form_data\":{},\"dashboards\":[],\"force\"\
+  :false,\"result_format\":\"json\",\"result_type\":\"full\"},\"result_format\":\"\
+  json\",\"result_type\":\"full\"}"
+cache_timeout: null
+uuid: 6895d394-de8c-4088-a6d2-9e617536e37d
+version: 1.0.0
+dataset_uuid: a9acfde8-2adc-4e2b-8c28-bf75c087321d

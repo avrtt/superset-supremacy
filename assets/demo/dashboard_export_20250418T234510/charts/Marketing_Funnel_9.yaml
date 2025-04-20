@@ -1,0 +1,58 @@
+slice_name: Marketing Funnel
+description: null
+certified_by: null
+certification_details: null
+viz_type: funnel
+params:
+  datasource: 4__table
+  viz_type: funnel
+  slice_id: 9
+  granularity_sqla: date_day
+  time_range: 'Last 90 days : '
+  groupby:
+  - channel_id
+  metric:
+    aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: false
+    label: SUM(tofu_events + mofu_events + bofu_eve...
+    optionName: metric_d5b1g07qs1a_zn435n9cmk
+    sqlExpression: SUM(tofu_events + mofu_events + bofu_events + conversion_events)
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: channel_id
+    operator: <
+    operatorId: LESS_THAN
+    comparator: '5'
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_6arbkgs157h_8e64oftk0nv
+  row_limit: 10
+  sort_by_metric: true
+  color_scheme: supersetColors
+  show_legend: false
+  legendOrientation: top
+  legendMargin: null
+  label_type: 0
+  number_format: SMART_NUMBER
+  show_labels: false
+  extra_form_data: {}
+  dashboards: []
+query_context: '{"datasource":{"id":4,"type":"table"},"force":false,"queries":[{"time_range":"Last
+  90 days : ","granularity":"date_day","filters":[{"col":"channel_id","op":"<","val":"5"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["channel_id"],"metrics":[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":false,"label":"SUM(tofu_events
+  + mofu_events + bofu_eve...","optionName":"metric_d5b1g07qs1a_zn435n9cmk","sqlExpression":"SUM(tofu_events
+  + mofu_events + bofu_events + conversion_events)"}],"orderby":[[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":false,"label":"SUM(tofu_events
+  + mofu_events + bofu_eve...","optionName":"metric_d5b1g07qs1a_zn435n9cmk","sqlExpression":"SUM(tofu_events
+  + mofu_events + bofu_events + conversion_events)"},false]],"annotation_layers":[],"row_limit":10,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"4__table","viz_type":"funnel","slice_id":9,"granularity_sqla":"date_day","time_range":"Last
+  90 days : ","groupby":["channel_id"],"metric":{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":false,"label":"SUM(tofu_events
+  + mofu_events + bofu_eve...","optionName":"metric_d5b1g07qs1a_zn435n9cmk","sqlExpression":"SUM(tofu_events
+  + mofu_events + bofu_events + conversion_events)"},"adhoc_filters":[{"expressionType":"SIMPLE","subject":"channel_id","operator":"<","operatorId":"LESS_THAN","comparator":"5","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_6arbkgs157h_8e64oftk0nv"}],"row_limit":10,"sort_by_metric":true,"color_scheme":"supersetColors","show_legend":false,"legendOrientation":"top","legendMargin":null,"label_type":0,"number_format":"SMART_NUMBER","show_labels":false,"extra_form_data":{},"dashboards":[],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 411242d5-1ae4-4355-82c8-eed1e5ed66db
+version: 1.0.0
+dataset_uuid: a9acfde8-2adc-4e2b-8c28-bf75c087321d

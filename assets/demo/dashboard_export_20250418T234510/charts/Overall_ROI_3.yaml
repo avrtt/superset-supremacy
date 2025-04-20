@@ -1,0 +1,62 @@
+slice_name: Overall ROI
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number
+params:
+  datasource: 2__table
+  viz_type: big_number
+  slice_id: 3
+  granularity_sqla: date_day
+  time_grain_sqla: P1W
+  time_range: ' : '
+  metric:
+    aggregate: AVG
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: roi
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 15
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: NUMERIC
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    label: AVG(roi)
+    optionName: metric_4e6wofvvabj_zs7lvz90blb
+    sqlExpression: null
+  adhoc_filters: []
+  show_timestamp: false
+  show_trend_line: true
+  start_y_axis_at_zero: false
+  time_range_fixed: false
+  color_picker:
+    r: 0
+    g: 122
+    b: 135
+    a: 1
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: ',.1%'
+  time_format: smart_date
+  rolling_type: None
+  extra_form_data: {}
+  dashboards:
+  - 1
+query_context: '{"datasource":{"id":2,"type":"table"},"force":false,"queries":[{"time_range":"
+  : ","granularity":"date_day","filters":[],"extras":{"time_grain_sqla":"P1W","having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"aggregate":"AVG","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"roi","description":null,"expression":null,"filterable":true,"groupby":true,"id":15,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"NUMERIC","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"AVG(roi)","optionName":"metric_4e6wofvvabj_zs7lvz90blb","sqlExpression":null}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"is_timeseries":true,"post_processing":[{"operation":"pivot","options":{"index":["__timestamp"],"columns":[],"aggregates":{"AVG(roi)":{"operator":"mean"}},"drop_missing_columns":true}},{"operation":"flatten"}]}],"form_data":{"datasource":"2__table","viz_type":"big_number","slice_id":3,"granularity_sqla":"date_day","time_grain_sqla":"P1W","time_range":"
+  : ","metric":{"aggregate":"AVG","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"roi","description":null,"expression":null,"filterable":true,"groupby":true,"id":15,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"NUMERIC","type_generic":0,"verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"AVG(roi)","optionName":"metric_4e6wofvvabj_zs7lvz90blb","sqlExpression":null},"adhoc_filters":[],"show_timestamp":false,"show_trend_line":true,"start_y_axis_at_zero":false,"time_range_fixed":false,"color_picker":{"r":0,"g":122,"b":135,"a":1},"header_font_size":0.4,"subheader_font_size":0.15,"y_axis_format":",.1%","time_format":"smart_date","rolling_type":"None","extra_form_data":{},"dashboards":[1],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 18774712-687f-418f-a409-abf4d5364806
+version: 1.0.0
+dataset_uuid: 96be2c92-3083-4daf-b50f-f172437735a5

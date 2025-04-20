@@ -1,0 +1,458 @@
+{
+  "datasets": [
+    {
+      "database_name": "marketing_analytics",
+      "schema": "public",
+      "table_name": "mv_daily_channel_metrics",
+      "sql": "",
+      "description": "Daily channel performance metrics including ROI, ROAS, CAC, and CLV",
+      "main_dttm_col": "date_day",
+      "offset": 0,
+      "default_endpoint": "",
+      "cache_timeout": 86400,
+      "schema_perm": "",
+      "filter_select_enabled": true,
+      "fetch_values_predicate": "",
+      "extra": "{\"certification\": {\"certified_by\": \"Marketing Analytics Team\", \"details\": \"KPI metrics for marketing performance analysis\"}, \"warning_markdown\": \"\"}",
+      "metrics": [
+        {
+          "metric_name": "total_spend",
+          "verbose_name": "Total Spend",
+          "metric_type": "sum",
+          "expression": "SUM(total_spend)",
+          "description": "Total marketing spend across campaigns",
+          "d3format": "$,.2f",
+          "warning_text": ""
+        },
+        {
+          "metric_name": "total_revenue",
+          "verbose_name": "Total Revenue",
+          "metric_type": "sum",
+          "expression": "SUM(total_revenue)",
+          "description": "Total revenue generated from marketing",
+          "d3format": "$,.2f",
+          "warning_text": ""
+        },
+        {
+          "metric_name": "avg_roi",
+          "verbose_name": "Average ROI",
+          "metric_type": "avg",
+          "expression": "AVG(roi)",
+          "description": "Return on Investment",
+          "d3format": ",.1%",
+          "warning_text": ""
+        },
+        {
+          "metric_name": "avg_roas",
+          "verbose_name": "Average ROAS",
+          "metric_type": "avg",
+          "expression": "AVG(roas)",
+          "description": "Return on Ad Spend",
+          "d3format": ",.2f",
+          "warning_text": ""
+        },
+        {
+          "metric_name": "avg_cac",
+          "verbose_name": "Average CAC",
+          "metric_type": "avg",
+          "expression": "AVG(cac)",
+          "description": "Customer Acquisition Cost",
+          "d3format": "$,.2f",
+          "warning_text": ""
+        },
+        {
+          "metric_name": "avg_clv",
+          "verbose_name": "Average CLV",
+          "metric_type": "avg",
+          "expression": "AVG(avg_clv)",
+          "description": "Customer Lifetime Value",
+          "d3format": "$,.2f",
+          "warning_text": ""
+        }
+      ],
+      "columns": [
+        {
+          "column_name": "date_day",
+          "verbose_name": "Date",
+          "description": "Date of metrics",
+          "type": "TIMESTAMP WITHOUT TIME ZONE",
+          "groupby": true,
+          "filterable": true,
+          "is_dttm": true
+        },
+        {
+          "column_name": "channel_name",
+          "verbose_name": "Channel",
+          "description": "Marketing channel name",
+          "type": "STRING",
+          "groupby": true,
+          "filterable": true,
+          "is_dttm": false
+        },
+        {
+          "column_name": "channel_id",
+          "verbose_name": "Channel ID",
+          "description": "Marketing channel identifier",
+          "type": "INTEGER",
+          "groupby": true,
+          "filterable": true,
+          "is_dttm": false
+        },
+        {
+          "column_name": "total_spend",
+          "verbose_name": "Total Spend",
+          "description": "Marketing spend amount",
+          "type": "DECIMAL(18,2)",
+          "groupby": false,
+          "filterable": true,
+          "is_dttm": false
+        },
+        {
+          "column_name": "total_revenue",
+          "verbose_name": "Total Revenue",
+          "description": "Revenue generated",
+          "type": "DECIMAL(18,2)",
+          "groupby": false,
+          "filterable": true,
+          "is_dttm": false
+        },
+        {
+          "column_name": "converted_users",
+          "verbose_name": "Converted Users",
+          "description": "Number of users who converted",
+          "type": "INTEGER",
+          "groupby": false,
+          "filterable": true,
+          "is_dttm": false
+        },
+        {
+          "column_name": "roas",
+          "verbose_name": "ROAS",
+          "description": "Return on Ad Spend (Revenue/Spend)",
+          "type": "DECIMAL(18,2)",
+          "groupby": false,
+          "filterable": true,
+          "is_dttm": false
+        },
+        {
+          "column_name": "roi",
+          "verbose_name": "ROI",
+          "description": "Return on Investment ((Revenue-Spend)/Spend)",
+          "type": "DECIMAL(18,2)",
+          "groupby": false,
+          "filterable": true,
+          "is_dttm": false
+        },
+        {
+          "column_name": "cac",
+          "verbose_name": "CAC",
+          "description": "Customer Acquisition Cost (Spend/Converted Users)",
+          "type": "DECIMAL(18,2)",
+          "groupby": false,
+          "filterable": true,
+          "is_dttm": false
+        },
+        {
+          "column_name": "avg_clv",
+          "verbose_name": "Average CLV",
+          "description": "Average Customer Lifetime Value",
+          "type": "DECIMAL(18,2)",
+          "groupby": false,
+          "filterable": true,
+          "is_dttm": false
+        },
+        {
+          "column_name": "clv_cac_ratio",
+          "verbose_name": "CLV:CAC Ratio",
+          "description": "Ratio of CLV to CAC",
+          "type": "DECIMAL(18,2)",
+          "groupby": false,
+          "filterable": true,
+          "is_dttm": false
+        }
+      ]
+    },
+    {
+      "database_name": "marketing_analytics",
+      "schema": "public",
+      "table_name": "mv_funnel_conversion_rates",
+      "sql": "",
+      "description": "Funnel conversion rates for marketing channels (TOFU, MOFU, BOFU)",
+      "main_dttm_col": "date_day",
+      "offset": 0,
+      "default_endpoint": "",
+      "cache_timeout": 86400,
+      "schema_perm": "",
+      "filter_select_enabled": true,
+      "fetch_values_predicate": "",
+      "extra": "{\"certification\": {\"certified_by\": \"Marketing Analytics Team\", \"details\": \"Funnel analysis metrics\"}, \"warning_markdown\": \"\"}",
+      "metrics": [
+        {
+          "metric_name": "sum_tofu_events",
+          "verbose_name": "Top Funnel Events",
+          "metric_type": "sum",
+          "expression": "SUM(tofu_events)",
+          "description": "Sum of top of funnel events (awareness)",
+          "d3format": ",d",
+          "warning_text": ""
+        },
+        {
+          "metric_name": "sum_mofu_events",
+          "verbose_name": "Middle Funnel Events",
+          "metric_type": "sum",
+          "expression": "SUM(mofu_events)",
+          "description": "Sum of middle of funnel events (consideration)",
+          "d3format": ",d",
+          "warning_text": ""
+        },
+        {
+          "metric_name": "sum_bofu_events",
+          "verbose_name": "Bottom Funnel Events",
+          "metric_type": "sum",
+          "expression": "SUM(bofu_events)",
+          "description": "Sum of bottom of funnel events (decision)",
+          "d3format": ",d",
+          "warning_text": ""
+        },
+        {
+          "metric_name": "sum_conversion_events",
+          "verbose_name": "Conversion Events",
+          "metric_type": "sum",
+          "expression": "SUM(conversion_events)",
+          "description": "Sum of conversion events (purchase)",
+          "d3format": ",d",
+          "warning_text": ""
+        },
+        {
+          "metric_name": "avg_tofu_to_mofu",
+          "verbose_name": "TOFU to MOFU Rate",
+          "metric_type": "avg",
+          "expression": "AVG(tofu_to_mofu_rate)",
+          "description": "Average conversion rate from awareness to consideration",
+          "d3format": ",.1%",
+          "warning_text": ""
+        },
+        {
+          "metric_name": "avg_mofu_to_bofu",
+          "verbose_name": "MOFU to BOFU Rate",
+          "metric_type": "avg",
+          "expression": "AVG(mofu_to_bofu_rate)",
+          "description": "Average conversion rate from consideration to decision",
+          "d3format": ",.1%",
+          "warning_text": ""
+        },
+        {
+          "metric_name": "avg_bofu_to_conv",
+          "verbose_name": "BOFU to Conversion Rate",
+          "metric_type": "avg",
+          "expression": "AVG(bofu_to_conversion_rate)",
+          "description": "Average conversion rate from decision to purchase",
+          "d3format": ",.1%",
+          "warning_text": ""
+        },
+        {
+          "metric_name": "avg_overall_conv",
+          "verbose_name": "Overall Conversion Rate",
+          "metric_type": "avg",
+          "expression": "AVG(overall_conversion_rate)",
+          "description": "Average overall funnel conversion rate",
+          "d3format": ",.1%",
+          "warning_text": ""
+        }
+      ],
+      "columns": [
+        {
+          "column_name": "date_day",
+          "verbose_name": "Date",
+          "description": "Date of metrics",
+          "type": "TIMESTAMP WITHOUT TIME ZONE",
+          "groupby": true,
+          "filterable": true,
+          "is_dttm": true
+        },
+        {
+          "column_name": "channel_id",
+          "verbose_name": "Channel ID",
+          "description": "Marketing channel identifier",
+          "type": "INTEGER",
+          "groupby": true,
+          "filterable": true,
+          "is_dttm": false
+        },
+        {
+          "column_name": "channel_name",
+          "verbose_name": "Channel",
+          "description": "Marketing channel name",
+          "type": "STRING",
+          "groupby": true,
+          "filterable": true,
+          "is_dttm": false
+        }
+      ]
+    },
+    {
+      "database_name": "marketing_analytics",
+      "schema": "public",
+      "table_name": "mv_budget_vs_actual",
+      "sql": "",
+      "description": "Budget vs actual spend analysis for marketing channels",
+      "main_dttm_col": "date_day",
+      "offset": 0,
+      "default_endpoint": "",
+      "cache_timeout": 86400,
+      "schema_perm": "",
+      "filter_select_enabled": true,
+      "fetch_values_predicate": "",
+      "extra": "{\"certification\": {\"certified_by\": \"Marketing Analytics Team\", \"details\": \"Budget analysis metrics\"}, \"warning_markdown\": \"\"}",
+      "metrics": [
+        {
+          "metric_name": "sum_planned_budget",
+          "verbose_name": "Planned Budget",
+          "metric_type": "sum",
+          "expression": "SUM(planned_budget)",
+          "description": "Sum of planned marketing budget",
+          "d3format": "$,.2f",
+          "warning_text": ""
+        },
+        {
+          "metric_name": "sum_actual_spend",
+          "verbose_name": "Actual Spend",
+          "metric_type": "sum",
+          "expression": "SUM(actual_spend)",
+          "description": "Sum of actual marketing spend",
+          "d3format": "$,.2f",
+          "warning_text": ""
+        },
+        {
+          "metric_name": "sum_budget_variance",
+          "verbose_name": "Budget Variance",
+          "metric_type": "sum",
+          "expression": "SUM(budget_variance)",
+          "description": "Difference between actual spend and planned budget",
+          "d3format": "$,.2f",
+          "warning_text": ""
+        },
+        {
+          "metric_name": "avg_budget_utilization",
+          "verbose_name": "Budget Utilization",
+          "metric_type": "avg",
+          "expression": "AVG(budget_utilization_pct)",
+          "description": "Average percentage of budget utilized",
+          "d3format": ",.1%",
+          "warning_text": ""
+        }
+      ],
+      "columns": [
+        {
+          "column_name": "date_day",
+          "verbose_name": "Date",
+          "description": "Date of metrics",
+          "type": "TIMESTAMP WITHOUT TIME ZONE",
+          "groupby": true,
+          "filterable": true,
+          "is_dttm": true
+        },
+        {
+          "column_name": "channel_id",
+          "verbose_name": "Channel ID",
+          "description": "Marketing channel identifier",
+          "type": "INTEGER",
+          "groupby": true,
+          "filterable": true,
+          "is_dttm": false
+        },
+        {
+          "column_name": "channel_name",
+          "verbose_name": "Channel",
+          "description": "Marketing channel name",
+          "type": "STRING",
+          "groupby": true,
+          "filterable": true,
+          "is_dttm": false
+        }
+      ]
+    },
+    {
+      "database_name": "marketing_analytics",
+      "schema": "public",
+      "table_name": "mv_forecast_accuracy",
+      "sql": "",
+      "description": "Forecast accuracy analysis comparing predicted vs actual ROI",
+      "main_dttm_col": "date_day",
+      "offset": 0,
+      "default_endpoint": "",
+      "cache_timeout": 86400,
+      "schema_perm": "",
+      "filter_select_enabled": true,
+      "fetch_values_predicate": "",
+      "extra": "{\"certification\": {\"certified_by\": \"Marketing Analytics Team\", \"details\": \"Forecast accuracy metrics\"}, \"warning_markdown\": \"\"}",
+      "metrics": [
+        {
+          "metric_name": "avg_predicted_roi",
+          "verbose_name": "Predicted ROI",
+          "metric_type": "avg",
+          "expression": "AVG(predicted_roi)",
+          "description": "Average predicted ROI",
+          "d3format": ",.1%",
+          "warning_text": ""
+        },
+        {
+          "metric_name": "avg_actual_roi",
+          "verbose_name": "Actual ROI",
+          "metric_type": "avg",
+          "expression": "AVG(actual_roi)",
+          "description": "Average actual ROI",
+          "d3format": ",.1%",
+          "warning_text": ""
+        },
+        {
+          "metric_name": "avg_roi_variance",
+          "verbose_name": "ROI Variance",
+          "metric_type": "avg",
+          "expression": "AVG(roi_variance)",
+          "description": "Average difference between predicted and actual ROI",
+          "d3format": ",.1%",
+          "warning_text": ""
+        },
+        {
+          "metric_name": "avg_forecast_accuracy",
+          "verbose_name": "Forecast Accuracy",
+          "metric_type": "avg",
+          "expression": "AVG(forecast_accuracy_pct)",
+          "description": "Average forecast accuracy percentage",
+          "d3format": ",.1%",
+          "warning_text": ""
+        }
+      ],
+      "columns": [
+        {
+          "column_name": "date_day",
+          "verbose_name": "Date",
+          "description": "Date of metrics",
+          "type": "TIMESTAMP WITHOUT TIME ZONE",
+          "groupby": true,
+          "filterable": true,
+          "is_dttm": true
+        },
+        {
+          "column_name": "channel_id",
+          "verbose_name": "Channel ID",
+          "description": "Marketing channel identifier",
+          "type": "INTEGER",
+          "groupby": true,
+          "filterable": true,
+          "is_dttm": false
+        },
+        {
+          "column_name": "channel_name",
+          "verbose_name": "Channel",
+          "description": "Marketing channel name",
+          "type": "STRING",
+          "groupby": true,
+          "filterable": true,
+          "is_dttm": false
+        }
+      ]
+    }
+  ]
+} 

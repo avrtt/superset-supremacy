@@ -1,0 +1,85 @@
+services:
+  postgres:
+    image: postgres:14
+    container_name: demo_postgres
+    restart: unless-stopped
+    volumes:
+      - postgres_demo_data:/var/lib/postgresql/data
+      - ./sql:/docker-entrypoint-initdb.d
+    environment:
+      POSTGRES_USER: superset
+      POSTGRES_PASSWORD: superset
+      POSTGRES_DB: marketing_analytics
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "superset"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7
+    container_name: demo_redis
+    restart: unless-stopped
+    volumes:
+      - redis_demo_data:/data
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  superset:
+    image: apache/superset:2.1.0
+    container_name: demo_superset
+    restart: unless-stopped
+    depends_on:
+      - postgres
+      - redis
+    environment:
+      # Database configuration
+      SUPERSET_DB_URI: postgresql+psycopg2://superset:superset@postgres:5432/marketing_analytics
+      # Redis configuration
+      REDIS_URL: redis://redis:6379/0
+      # Secrets (must be at least 32 bytes for JWT)
+      SECRET_KEY: thisISaSECRETthisISaSECRETthisISaSECRETthisISaSECRET
+      SUPERSET_JWT_SECRET: thisISaSECRETthisISaSECRETthisISaSECRETthisISaSECRET
+      # Flask configuration
+      FLASK_ENV: development
+      # Disable OAuth for demo
+      OAUTH_PROVIDERS: ""
+    ports:
+      - "8088:8088"
+    volumes:
+      - superset_demo_home:/app/superset_home
+      - ./assets:/app/superset/assets
+    user: "root"
+    command: |
+      bash -c '
+        echo "Setting up Superset for demo mode..."
+        superset db upgrade &&
+        superset fab create-admin \
+          --username admin \
+          --firstname Superset \
+          --lastname Admin \
+          --email admin@example.com \
+          --password admin &&
+        superset init &&
+        # Create a marketing database connection
+        echo "Setting up Marketing Analytics database..."
+        superset set-database-uri --database-name "Marketing Analytics" --uri postgresql://superset:superset@postgres:5432/marketing_analytics &&
+        # The SQL scripts in the sql directory will be executed automatically through the postgres entrypoint
+        echo "Importing marketing datasets and dashboard..."
+        superset import-datasources -p /app/superset/assets/datasets/marketing_datasets.json &&
+        superset import-dashboards -p /app/superset/assets/dashboards/marketing_strategy_dashboard.json &&
+        echo "Setup complete, starting Superset..."
+        superset run -p 8088 -h 0.0.0.0 --with-threads --reload --debugger
+      '
+
+volumes:
+  postgres_demo_data:
+  redis_demo_data:
+  superset_demo_home: 

@@ -1,0 +1,83 @@
+slice_name: Forecast Accuracy Trend
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_area
+params:
+  datasource: 3__table
+  viz_type: echarts_area
+  granularity_sqla: date_day
+  time_grain_sqla: P1D
+  time_range: 'Last 90 days : '
+  metrics:
+  - expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: forecast_accuracy_pct
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 25
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: NUMERIC
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    aggregate: AVG
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: AVG(forecast_accuracy_pct)
+    optionName: metric_vjmlxwcuuca_js8ils3vym
+  groupby:
+  - channel_name
+  adhoc_filters: []
+  order_desc: true
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  rolling_type: null
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  x_axis_title_margin: 15
+  y_axis_title_margin: 15
+  y_axis_title_position: Left
+  color_scheme: supersetColors
+  seriesType: smooth
+  opacity: 0.2
+  stack: null
+  only_total: true
+  show_extra_controls: true
+  markerEnabled: false
+  markerSize: 6
+  zoomable: true
+  show_legend: true
+  legendType: scroll
+  legendOrientation: right
+  legendMargin: ''
+  x_axis_time_format: smart_date
+  rich_tooltip: true
+  tooltipTimeFormat: smart_date
+  y_axis_format: SMART_NUMBER
+  logAxis: false
+  minorSplitLine: true
+  truncateYAxis: false
+  y_axis_bounds:
+  - null
+  - null
+  extra_form_data: {}
+  dashboards: []
+query_context: '{"datasource":{"id":3,"type":"table"},"force":false,"queries":[{"time_range":"Last
+  90 days : ","granularity":"date_day","filters":[],"extras":{"time_grain_sqla":"P1D","having":"","where":""},"applied_time_extras":{},"columns":["channel_name"],"metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"forecast_accuracy_pct","description":null,"expression":null,"filterable":true,"groupby":true,"id":25,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"NUMERIC","type_generic":0,"verbose_name":null,"warning_markdown":null},"aggregate":"AVG","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"AVG(forecast_accuracy_pct)","optionName":"metric_vjmlxwcuuca_js8ils3vym"}],"orderby":[[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"forecast_accuracy_pct","description":null,"expression":null,"filterable":true,"groupby":true,"id":25,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"NUMERIC","type_generic":0,"verbose_name":null,"warning_markdown":null},"aggregate":"AVG","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"AVG(forecast_accuracy_pct)","optionName":"metric_vjmlxwcuuca_js8ils3vym"},false]],"annotation_layers":[],"row_limit":10000,"series_columns":["channel_name"],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"is_timeseries":true,"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["__timestamp"],"columns":["channel_name"],"aggregates":{"AVG(forecast_accuracy_pct)":{"operator":"mean"}},"drop_missing_columns":false}},{"operation":"rename","options":{"columns":{"AVG(forecast_accuracy_pct)":null},"level":0,"inplace":true}},{"operation":"flatten"}]}],"form_data":{"datasource":"3__table","viz_type":"echarts_area","granularity_sqla":"date_day","time_grain_sqla":"P1D","time_range":"Last
+  90 days : ","metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"forecast_accuracy_pct","description":null,"expression":null,"filterable":true,"groupby":true,"id":25,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"NUMERIC","type_generic":0,"verbose_name":null,"warning_markdown":null},"aggregate":"AVG","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"AVG(forecast_accuracy_pct)","optionName":"metric_vjmlxwcuuca_js8ils3vym"}],"groupby":["channel_name"],"adhoc_filters":[],"order_desc":true,"row_limit":10000,"truncate_metric":true,"show_empty_columns":true,"rolling_type":null,"comparison_type":"values","annotation_layers":[],"forecastPeriods":10,"forecastInterval":0.8,"x_axis_title_margin":15,"y_axis_title_margin":15,"y_axis_title_position":"Left","color_scheme":"supersetColors","seriesType":"smooth","opacity":0.2,"stack":null,"only_total":true,"show_extra_controls":true,"markerEnabled":false,"markerSize":6,"zoomable":true,"show_legend":true,"legendType":"scroll","legendOrientation":"right","legendMargin":"","x_axis_time_format":"smart_date","rich_tooltip":true,"tooltipTimeFormat":"smart_date","y_axis_format":"SMART_NUMBER","logAxis":false,"minorSplitLine":true,"truncateYAxis":false,"y_axis_bounds":[null,null],"extra_form_data":{},"dashboards":[],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 9d016776-ca80-4c2f-a52f-0afdb92a5233
+version: 1.0.0
+dataset_uuid: 7910416a-aead-45df-894d-a5b38da9fb3e

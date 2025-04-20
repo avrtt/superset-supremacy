@@ -1,0 +1,331 @@
+{
+  "dashboard_title": "Marketing Strategy Dashboard",
+  "description": "Comprehensive marketing strategy dashboard for channel prioritization, budget allocation, and ROI forecasting.",
+  "css": "/* Custom CSS for dark theme */\n.dashboard {\n  background-color: #121212;\n  color: #ffffff;\n}\n\n.dashboard-header {\n  background-color: #1e1e1e;\n}\n\n.filter-bar {\n  background-color: #1e1e1e;\n  border-color: #2c2c2c;\n}\n\n.panel {\n  background-color: #1e1e1e;\n  border-color: #2c2c2c;\n}\n\n.chart-header {\n  background-color: #1e1e1e;\n  color: #e0e0e0;\n}\n",
+  "json_metadata": "{\"filter_scopes\": {\"168\": {\"date_range\": {\"scope\": [\"ROOT_ID\"], \"immune\": []}, \"channel\": {\"scope\": [\"ROOT_ID\"], \"immune\": []}, \"budget_slider\": {\"scope\": [\"ROOT_ID\"], \"immune\": []}}, \"171\": {\"date_range\": {\"scope\": [\"ROOT_ID\"], \"immune\": []}, \"channel\": {\"scope\": [\"ROOT_ID\"], \"immune\": []}, \"budget_slider\": {\"scope\": [\"ROOT_ID\"], \"immune\": []}}}, \"timed_refresh_immune_slices\": [], \"expanded_slices\": {}, \"refresh_frequency\": 3600, \"default_filters\": \"{\\\"168\\\": {\\\"date_range\\\": \\\"Last 90 days\\\", \\\"channel\\\": null, \\\"budget_slider\\\": [0, 100000]}}\", \"color_scheme\": \"darkBlue\", \"label_colors\": {\"Facebook\": \"#1F77B4\", \"Google\": \"#2CA02C\", \"Instagram\": \"#9467BD\", \"LinkedIn\": \"#FF7F0E\", \"TikTok\": \"#D62728\", \"Twitter\": \"#8C564B\", \"YouTube\": \"#E377C2\"}, \"shared_label_colors\": {\"Paid Search\": \"#2196f3\", \"Social Media\": \"#4caf50\", \"Email\": \"#ff9800\", \"Display\": \"#9c27b0\", \"Affiliate\": \"#e91e63\", \"Referral\": \"#607d8b\"}}",
+  "position_json": "{\"DASHBOARD_VERSION_KEY\": \"v2\", \"ROOT_ID\": {\"type\": \"ROOT\", \"id\": \"ROOT_ID\", \"children\": [\"GRID_ID\", \"TABS-XtECQ0QD8t\", \"TABS-Dt4R2tBNa4\", \"TABS-8YjLqWlLNW\", \"TABS-QJVZC-Z_Mz\"]}, \"GRID_ID\": {\"type\": \"GRID\", \"id\": \"GRID_ID\", \"children\": [\"ROW-X2G10sQsL\", \"ROW-3m4DDkUzs\", \"ROW-WXtKo4d7S\"], \"parents\": [\"ROOT_ID\"]}, \"ROW-X2G10sQsL\": {\"type\": \"ROW\", \"id\": \"ROW-X2G10sQsL\", \"children\": [\"COLUMN-dFmLgUH0l\"], \"parents\": [\"ROOT_ID\", \"GRID_ID\"], \"meta\": {\"background\": \"BACKGROUND_TRANSPARENT\"}}, \"COLUMN-dFmLgUH0l\": {\"type\": \"COLUMN\", \"id\": \"COLUMN-dFmLgUH0l\", \"children\": [\"HEADER-XrFvz_0ZZ\", \"MARKDOWN-MwUfVfFkb\"], \"meta\": {\"background\": \"BACKGROUND_TRANSPARENT\"}, \"parents\": [\"ROOT_ID\", \"GRID_ID\", \"ROW-X2G10sQsL\"]}, \"HEADER-XrFvz_0ZZ\": {\"type\": \"HEADER\", \"id\": \"HEADER-XrFvz_0ZZ\", \"meta\": {\"text\": \"Marketing Strategy Dashboard\", \"headerSize\": \"h1\"}, \"parents\": [\"ROOT_ID\", \"GRID_ID\", \"ROW-X2G10sQsL\", \"COLUMN-dFmLgUH0l\"]}, \"MARKDOWN-MwUfVfFkb\": {\"type\": \"MARKDOWN\", \"id\": \"MARKDOWN-MwUfVfFkb\", \"children\": [], \"parents\": [\"ROOT_ID\", \"GRID_ID\", \"ROW-X2G10sQsL\", \"COLUMN-dFmLgUH0l\"], \"meta\": {\"width\": 12, \"height\": 14, \"code\": \"This dashboard provides comprehensive marketing analytics to help with strategic decision-making on channel prioritization, budget allocation, and ROI forecasting. Use the filters at the top to customize your view.\"}}, \"ROW-3m4DDkUzs\": {\"type\": \"ROW\", \"id\": \"ROW-3m4DDkUzs\", \"children\": [\"CHART-qzz3JO5qTm\", \"CHART-2B9oFB0Ig1\", \"CHART-GfEqOKn9-5\", \"CHART-JbdJFb_wvz\", \"CHART-dZdH-4dBrp\"], \"parents\": [\"ROOT_ID\", \"GRID_ID\"], \"meta\": {\"background\": \"BACKGROUND_TRANSPARENT\"}}, \"CHART-qzz3JO5qTm\": {\"type\": \"CHART\", \"id\": \"CHART-qzz3JO5qTm\", \"children\": [], \"parents\": [\"ROOT_ID\", \"GRID_ID\", \"ROW-3m4DDkUzs\"], \"meta\": {\"width\": 2, \"height\": 10, \"chartId\": 1001, \"sliceName\": \"Total Marketing Spend\"}}, \"CHART-2B9oFB0Ig1\": {\"type\": \"CHART\", \"id\": \"CHART-2B9oFB0Ig1\", \"children\": [], \"parents\": [\"ROOT_ID\", \"GRID_ID\", \"ROW-3m4DDkUzs\"], \"meta\": {\"width\": 2, \"height\": 10, \"chartId\": 1002, \"sliceName\": \"Overall ROAS\"}}, \"CHART-GfEqOKn9-5\": {\"type\": \"CHART\", \"id\": \"CHART-GfEqOKn9-5\", \"children\": [], \"parents\": [\"ROOT_ID\", \"GRID_ID\", \"ROW-3m4DDkUzs\"], \"meta\": {\"width\": 2, \"height\": 10, \"chartId\": 1003, \"sliceName\": \"Overall ROI\"}}, \"CHART-JbdJFb_wvz\": {\"type\": \"CHART\", \"id\": \"CHART-JbdJFb_wvz\", \"children\": [], \"parents\": [\"ROOT_ID\", \"GRID_ID\", \"ROW-3m4DDkUzs\"], \"meta\": {\"width\": 2, \"height\": 10, \"chartId\": 1004, \"sliceName\": \"Average CAC\"}}, \"CHART-dZdH-4dBrp\": {\"type\": \"CHART\", \"id\": \"CHART-dZdH-4dBrp\", \"children\": [], \"parents\": [\"ROOT_ID\", \"GRID_ID\", \"ROW-3m4DDkUzs\"], \"meta\": {\"width\": 4, \"height\": 10, \"chartId\": 1005, \"sliceName\": \"Forecast Accuracy\"}}, \"ROW-WXtKo4d7S\": {\"type\": \"ROW\", \"id\": \"ROW-WXtKo4d7S\", \"children\": [\"CHART-LQgywFrPQu\"], \"parents\": [\"ROOT_ID\", \"GRID_ID\"], \"meta\": {\"background\": \"BACKGROUND_TRANSPARENT\"}}, \"CHART-LQgywFrPQu\": {\"type\": \"CHART\", \"id\": \"CHART-LQgywFrPQu\", \"children\": [], \"parents\": [\"ROOT_ID\", \"GRID_ID\", \"ROW-WXtKo4d7S\"], \"meta\": {\"width\": 12, \"height\": 36, \"chartId\": 1006, \"sliceName\": \"ROI Trend by Channel\"}}, \"TABS-XtECQ0QD8t\": {\"type\": \"TABS\", \"id\": \"TABS-XtECQ0QD8t\", \"children\": [\"TAB-NrIoU0MnEB\", \"TAB-Xgt-YcBhNI\"], \"parents\": [\"ROOT_ID\"], \"meta\": {}}, \"TAB-NrIoU0MnEB\": {\"type\": \"TAB\", \"id\": \"TAB-NrIoU0MnEB\", \"children\": [\"ROW-qQWvh6Stir\"], \"parents\": [\"ROOT_ID\", \"TABS-XtECQ0QD8t\"], \"meta\": {\"text\": \"Channel Performance\", \"defaultText\": \"Tab title\"}}, \"ROW-qQWvh6Stir\": {\"type\": \"ROW\", \"id\": \"ROW-qQWvh6Stir\", \"children\": [\"CHART-1D0qf9OHU7\", \"CHART-KFXGJ6aF-r\"], \"parents\": [\"ROOT_ID\", \"TABS-XtECQ0QD8t\", \"TAB-NrIoU0MnEB\"], \"meta\": {\"background\": \"BACKGROUND_TRANSPARENT\"}}, \"CHART-1D0qf9OHU7\": {\"type\": \"CHART\", \"id\": \"CHART-1D0qf9OHU7\", \"children\": [], \"parents\": [\"ROOT_ID\", \"TABS-XtECQ0QD8t\", \"TAB-NrIoU0MnEB\", \"ROW-qQWvh6Stir\"], \"meta\": {\"width\": 6, \"height\": 50, \"chartId\": 1007, \"sliceName\": \"Channel ROI Comparison\"}}, \"CHART-KFXGJ6aF-r\": {\"type\": \"CHART\", \"id\": \"CHART-KFXGJ6aF-r\", \"children\": [], \"parents\": [\"ROOT_ID\", \"TABS-XtECQ0QD8t\", \"TAB-NrIoU0MnEB\", \"ROW-qQWvh6Stir\"], \"meta\": {\"width\": 6, \"height\": 50, \"chartId\": 1008, \"sliceName\": \"CAC by Channel\"}}, \"TAB-Xgt-YcBhNI\": {\"type\": \"TAB\", \"id\": \"TAB-Xgt-YcBhNI\", \"children\": [\"ROW-RjWYw0aFQ7\"], \"parents\": [\"ROOT_ID\", \"TABS-XtECQ0QD8t\"], \"meta\": {\"text\": \"Funnel Analysis\", \"defaultText\": \"Tab title\"}}, \"ROW-RjWYw0aFQ7\": {\"type\": \"ROW\", \"id\": \"ROW-RjWYw0aFQ7\", \"children\": [\"CHART-WCFCVQeYyV\", \"CHART-UO_LdXgCyU\"], \"parents\": [\"ROOT_ID\", \"TABS-XtECQ0QD8t\", \"TAB-Xgt-YcBhNI\"], \"meta\": {\"background\": \"BACKGROUND_TRANSPARENT\"}}, \"CHART-WCFCVQeYyV\": {\"type\": \"CHART\", \"id\": \"CHART-WCFCVQeYyV\", \"children\": [], \"parents\": [\"ROOT_ID\", \"TABS-XtECQ0QD8t\", \"TAB-Xgt-YcBhNI\", \"ROW-RjWYw0aFQ7\"], \"meta\": {\"width\": 6, \"height\": 50, \"chartId\": 1009, \"sliceName\": \"Marketing Funnel\"}}, \"CHART-UO_LdXgCyU\": {\"type\": \"CHART\", \"id\": \"CHART-UO_LdXgCyU\", \"children\": [], \"parents\": [\"ROOT_ID\", \"TABS-XtECQ0QD8t\", \"TAB-Xgt-YcBhNI\", \"ROW-RjWYw0aFQ7\"], \"meta\": {\"width\": 6, \"height\": 50, \"chartId\": 1010, \"sliceName\": \"Conversion Rates by Channel\"}}, \"TABS-Dt4R2tBNa4\": {\"type\": \"TABS\", \"id\": \"TABS-Dt4R2tBNa4\", \"children\": [\"TAB-rGt9Hd6XaA\"], \"parents\": [\"ROOT_ID\"], \"meta\": {}}, \"TAB-rGt9Hd6XaA\": {\"type\": \"TAB\", \"id\": \"TAB-rGt9Hd6XaA\", \"children\": [\"ROW-AuYkz21X6b\"], \"parents\": [\"ROOT_ID\", \"TABS-Dt4R2tBNa4\"], \"meta\": {\"text\": \"Budget Analysis\", \"defaultText\": \"Tab title\"}}, \"ROW-AuYkz21X6b\": {\"type\": \"ROW\", \"id\": \"ROW-AuYkz21X6b\", \"children\": [\"CHART-CvVNYgdWi5\", \"CHART-suxsDPbRiX\"], \"parents\": [\"ROOT_ID\", \"TABS-Dt4R2tBNa4\", \"TAB-rGt9Hd6XaA\"], \"meta\": {\"background\": \"BACKGROUND_TRANSPARENT\"}}, \"CHART-CvVNYgdWi5\": {\"type\": \"CHART\", \"id\": \"CHART-CvVNYgdWi5\", \"children\": [], \"parents\": [\"ROOT_ID\", \"TABS-Dt4R2tBNa4\", \"TAB-rGt9Hd6XaA\", \"ROW-AuYkz21X6b\"], \"meta\": {\"width\": 6, \"height\": 50, \"chartId\": 1011, \"sliceName\": \"Budget vs Actual Spend\"}}, \"CHART-suxsDPbRiX\": {\"type\": \"CHART\", \"id\": \"CHART-suxsDPbRiX\", \"children\": [], \"parents\": [\"ROOT_ID\", \"TABS-Dt4R2tBNa4\", \"TAB-rGt9Hd6XaA\", \"ROW-AuYkz21X6b\"], \"meta\": {\"width\": 6, \"height\": 50, \"chartId\": 1012, \"sliceName\": \"Budget Utilization\"}}, \"TABS-8YjLqWlLNW\": {\"type\": \"TABS\", \"id\": \"TABS-8YjLqWlLNW\", \"children\": [\"TAB-ZUDYbrDzHt\"], \"parents\": [\"ROOT_ID\"], \"meta\": {}}, \"TAB-ZUDYbrDzHt\": {\"type\": \"TAB\", \"id\": \"TAB-ZUDYbrDzHt\", \"children\": [\"ROW-lZsT3y4nCS\"], \"parents\": [\"ROOT_ID\", \"TABS-8YjLqWlLNW\"], \"meta\": {\"text\": \"ROI Forecasting\", \"defaultText\": \"Tab title\"}}, \"ROW-lZsT3y4nCS\": {\"type\": \"ROW\", \"id\": \"ROW-lZsT3y4nCS\", \"children\": [\"CHART-1wzR9OCxDa\", \"CHART-G1NbH-y8PQ\"], \"parents\": [\"ROOT_ID\", \"TABS-8YjLqWlLNW\", \"TAB-ZUDYbrDzHt\"], \"meta\": {\"background\": \"BACKGROUND_TRANSPARENT\"}}, \"CHART-1wzR9OCxDa\": {\"type\": \"CHART\", \"id\": \"CHART-1wzR9OCxDa\", \"children\": [], \"parents\": [\"ROOT_ID\", \"TABS-8YjLqWlLNW\", \"TAB-ZUDYbrDzHt\", \"ROW-lZsT3y4nCS\"], \"meta\": {\"width\": 6, \"height\": 50, \"chartId\": 1013, \"sliceName\": \"Predicted vs Actual ROI\"}}, \"CHART-G1NbH-y8PQ\": {\"type\": \"CHART\", \"id\": \"CHART-G1NbH-y8PQ\", \"children\": [], \"parents\": [\"ROOT_ID\", \"TABS-8YjLqWlLNW\", \"TAB-ZUDYbrDzHt\", \"ROW-lZsT3y4nCS\"], \"meta\": {\"width\": 6, \"height\": 50, \"chartId\": 1014, \"sliceName\": \"Forecast Accuracy Trend\"}}, \"TABS-QJVZC-Z_Mz\": {\"type\": \"TABS\", \"id\": \"TABS-QJVZC-Z_Mz\", \"children\": [\"TAB-T-9U8Z5X6G\"], \"parents\": [\"ROOT_ID\"], \"meta\": {}}, \"TAB-T-9U8Z5X6G\": {\"type\": \"TAB\", \"id\": \"TAB-T-9U8Z5X6G\", \"children\": [\"ROW-XNluiyfAo2\"], \"parents\": [\"ROOT_ID\", \"TABS-QJVZC-Z_Mz\"], \"meta\": {\"text\": \"Data Tables\", \"defaultText\": \"Tab title\"}}, \"ROW-XNluiyfAo2\": {\"type\": \"ROW\", \"id\": \"ROW-XNluiyfAo2\", \"children\": [\"CHART-LvIp9EfZJx\"], \"parents\": [\"ROOT_ID\", \"TABS-QJVZC-Z_Mz\", \"TAB-T-9U8Z5X6G\"], \"meta\": {\"background\": \"BACKGROUND_TRANSPARENT\"}}, \"CHART-LvIp9EfZJx\": {\"type\": \"CHART\", \"id\": \"CHART-LvIp9EfZJx\", \"children\": [], \"parents\": [\"ROOT_ID\", \"TABS-QJVZC-Z_Mz\", \"TAB-T-9U8Z5X6G\", \"ROW-XNluiyfAo2\"], \"meta\": {\"width\": 12, \"height\": 50, \"chartId\": 1015, \"sliceName\": \"Detailed Channel Metrics\"}}}",
+  "slices": [
+    {
+      "slice_id": 1001,
+      "form_data": {
+        "adhoc_filters": [],
+        "datasource": "1__table",
+        "date_format": "smart_date",
+        "granularity_sqla": "date_day",
+        "header_font_size": 15,
+        "metric": "total_spend",
+        "slice_id": 1001,
+        "subheader_font_size": 12,
+        "time_range": "Last 90 days",
+        "viz_type": "big_number_total"
+      }
+    },
+    {
+      "slice_id": 1002,
+      "form_data": {
+        "adhoc_filters": [],
+        "datasource": "1__table",
+        "date_format": "smart_date",
+        "granularity_sqla": "date_day",
+        "header_font_size": 15,
+        "metric": "avg_roas",
+        "slice_id": 1002,
+        "subheader_font_size": 12,
+        "time_range": "Last 90 days",
+        "viz_type": "big_number_total"
+      }
+    },
+    {
+      "slice_id": 1003,
+      "form_data": {
+        "adhoc_filters": [],
+        "datasource": "1__table",
+        "date_format": "smart_date",
+        "granularity_sqla": "date_day",
+        "header_font_size": 15,
+        "metric": "avg_roi",
+        "slice_id": 1003,
+        "subheader_font_size": 12,
+        "time_range": "Last 90 days",
+        "viz_type": "big_number_total"
+      }
+    },
+    {
+      "slice_id": 1004,
+      "form_data": {
+        "adhoc_filters": [],
+        "datasource": "1__table",
+        "date_format": "smart_date",
+        "granularity_sqla": "date_day",
+        "header_font_size": 15,
+        "metric": "avg_cac",
+        "slice_id": 1004,
+        "subheader_font_size": 12,
+        "time_range": "Last 90 days",
+        "viz_type": "big_number_total"
+      }
+    },
+    {
+      "slice_id": 1005,
+      "form_data": {
+        "adhoc_filters": [],
+        "datasource": "4__table",
+        "date_format": "smart_date",
+        "granularity_sqla": "date_day",
+        "header_font_size": 15,
+        "metric": "avg_forecast_accuracy",
+        "slice_id": 1005,
+        "subheader_font_size": 12,
+        "time_range": "Last 90 days",
+        "viz_type": "big_number_total"
+      }
+    },
+    {
+      "slice_id": 1006,
+      "form_data": {
+        "adhoc_filters": [],
+        "color_scheme": "darkBlue",
+        "datasource": "1__table",
+        "granularity_sqla": "date_day",
+        "groupby": ["channel_name"],
+        "line_interpolation": "basis",
+        "metrics": ["avg_roi"],
+        "rich_tooltip": true,
+        "row_limit": 10000,
+        "show_legend": true,
+        "slice_id": 1006,
+        "time_range": "Last 90 days",
+        "viz_type": "line",
+        "x_axis_format": "smart_date",
+        "y_axis_format": ",.1%"
+      }
+    },
+    {
+      "slice_id": 1007,
+      "form_data": {
+        "adhoc_filters": [],
+        "color_scheme": "darkBlue",
+        "datasource": "1__table",
+        "granularity_sqla": "date_day",
+        "groupby": ["channel_name"],
+        "metric": "avg_roi",
+        "row_limit": 10,
+        "slice_id": 1007,
+        "time_range": "Last 90 days",
+        "viz_type": "pie",
+        "donut": true,
+        "labels_outside": true,
+        "show_legend": true,
+        "show_labels": true,
+        "label_type": "key_percent"
+      }
+    },
+    {
+      "slice_id": 1008,
+      "form_data": {
+        "adhoc_filters": [],
+        "bottom_margin": "auto",
+        "color_scheme": "darkBlue",
+        "datasource": "1__table",
+        "granularity_sqla": "date_day",
+        "groupby": ["channel_name"],
+        "metrics": ["avg_cac"],
+        "row_limit": 10,
+        "slice_id": 1008,
+        "time_range": "Last 90 days",
+        "viz_type": "dist_bar",
+        "x_axis_label": "Channel",
+        "y_axis_format": "$,.2f",
+        "y_axis_label": "Customer Acquisition Cost"
+      }
+    },
+    {
+      "slice_id": 1009,
+      "form_data": {
+        "adhoc_filters": [],
+        "color_scheme": "darkBlue",
+        "datasource": "2__table",
+        "granularity_sqla": "date_day",
+        "groupby": ["channel_name"],
+        "metrics": ["sum_tofu_events", "sum_mofu_events", "sum_bofu_events", "sum_conversion_events"],
+        "row_limit": 10,
+        "slice_id": 1009,
+        "time_range": "Last 90 days",
+        "viz_type": "funnel",
+        "sort_by_metric": true
+      }
+    },
+    {
+      "slice_id": 1010,
+      "form_data": {
+        "adhoc_filters": [],
+        "bottom_margin": "auto",
+        "color_scheme": "darkBlue",
+        "datasource": "2__table",
+        "granularity_sqla": "date_day",
+        "groupby": ["channel_name"],
+        "metrics": ["avg_tofu_to_mofu", "avg_mofu_to_bofu", "avg_bofu_to_conv", "avg_overall_conv"],
+        "row_limit": 10,
+        "slice_id": 1010,
+        "time_range": "Last 90 days",
+        "viz_type": "dist_bar",
+        "x_axis_label": "Channel",
+        "y_axis_format": ",.0%",
+        "y_axis_label": "Conversion Rate"
+      }
+    },
+    {
+      "slice_id": 1011,
+      "form_data": {
+        "adhoc_filters": [],
+        "bottom_margin": "auto",
+        "color_scheme": "darkBlue",
+        "datasource": "3__table",
+        "granularity_sqla": "date_day",
+        "groupby": ["channel_name"],
+        "metrics": ["sum_planned_budget", "sum_actual_spend"],
+        "row_limit": 10,
+        "slice_id": 1011,
+        "time_range": "Last 90 days",
+        "viz_type": "dist_bar",
+        "x_axis_label": "Channel",
+        "y_axis_format": "$,.0f",
+        "y_axis_label": "Budget vs Actual"
+      }
+    },
+    {
+      "slice_id": 1012,
+      "form_data": {
+        "adhoc_filters": [],
+        "color_scheme": "darkBlue",
+        "datasource": "3__table",
+        "granularity_sqla": "date_day",
+        "groupby": ["channel_name"],
+        "metric": "avg_budget_utilization",
+        "row_limit": 10,
+        "slice_id": 1012,
+        "time_range": "Last 90 days",
+        "viz_type": "gauge_chart",
+        "start_angle": 270,
+        "end_angle": -90,
+        "gauge_label_type": 1
+      }
+    },
+    {
+      "slice_id": 1013,
+      "form_data": {
+        "adhoc_filters": [],
+        "bottom_margin": "auto",
+        "color_scheme": "darkBlue",
+        "comparison_type": "values",
+        "datasource": "4__table",
+        "granularity_sqla": "date_day",
+        "groupby": ["channel_name"],
+        "metrics": ["avg_predicted_roi", "avg_actual_roi"],
+        "row_limit": 10,
+        "slice_id": 1013,
+        "time_range": "Last 90 days",
+        "viz_type": "dist_bar",
+        "x_axis_label": "Channel",
+        "y_axis_format": ",.1%",
+        "y_axis_label": "ROI Comparison"
+      }
+    },
+    {
+      "slice_id": 1014,
+      "form_data": {
+        "adhoc_filters": [],
+        "color_scheme": "darkBlue",
+        "datasource": "4__table",
+        "granularity_sqla": "date_day",
+        "groupby": ["channel_name"],
+        "line_interpolation": "linear",
+        "metrics": ["avg_forecast_accuracy"],
+        "rich_tooltip": true,
+        "row_limit": 10000,
+        "show_legend": true,
+        "slice_id": 1014,
+        "time_range": "Last 90 days",
+        "viz_type": "line",
+        "x_axis_format": "smart_date",
+        "y_axis_format": ",.0%",
+        "y_axis_bounds": [0, 100]
+      }
+    },
+    {
+      "slice_id": 1015,
+      "form_data": {
+        "adhoc_filters": [],
+        "all_columns": ["date_day", "channel_name", "total_spend", "total_revenue", "converted_users", "roas", "roi", "cac", "avg_clv", "clv_cac_ratio"],
+        "color_pn": true,
+        "datasource": "1__table",
+        "granularity_sqla": "date_day",
+        "include_search": true,
+        "order_by_cols": ["date_day desc"],
+        "percent_metrics": [],
+        "row_limit": 1000,
+        "slice_id": 1015,
+        "table_timestamp_format": "smart_date",
+        "time_range": "Last 90 days",
+        "viz_type": "table"
+      }
+    }
+  ],
+  "slug": "marketing-strategy",
+  "metadata": {
+    "filter_scopes": {
+      "168": {
+        "date_range": {
+          "scope": ["ROOT_ID"],
+          "immune": []
+        },
+        "channel": {
+          "scope": ["ROOT_ID"],
+          "immune": []
+        },
+        "budget_slider": {
+          "scope": ["ROOT_ID"],
+          "immune": []
+        }
+      },
+      "171": {
+        "date_range": {
+          "scope": ["ROOT_ID"],
+          "immune": []
+        },
+        "channel": {
+          "scope": ["ROOT_ID"],
+          "immune": []
+        },
+        "budget_slider": {
+          "scope": ["ROOT_ID"],
+          "immune": []
+        }
+      }
+    },
+    "timed_refresh_immune_slices": [],
+    "expanded_slices": {},
+    "refresh_frequency": 3600,
+    "default_filters": "{\"168\": {\"date_range\": \"Last 90 days\", \"channel\": null, \"budget_slider\": [0, 100000]}}",
+    "color_scheme": "darkBlue",
+    "label_colors": {
+      "Facebook": "#1F77B4",
+      "Google": "#2CA02C",
+      "Instagram": "#9467BD",
+      "LinkedIn": "#FF7F0E",
+      "TikTok": "#D62728",
+      "Twitter": "#8C564B",
+      "YouTube": "#E377C2"
+    },
+    "shared_label_colors": {
+      "Paid Search": "#2196f3",
+      "Social Media": "#4caf50",
+      "Email": "#ff9800",
+      "Display": "#9c27b0",
+      "Affiliate": "#e91e63",
+      "Referral": "#607d8b"
+    }
+  },
+  "version": "1.0.0",
+  "owners": []
+} 

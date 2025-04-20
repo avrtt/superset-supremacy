@@ -1,0 +1,105 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: superset
+  namespace: superset
+  labels:
+    app: superset-marketing
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: superset-marketing
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  template:
+    metadata:
+      labels:
+        app: superset-marketing
+    spec:
+      securityContext:
+        runAsUser: 1000
+        runAsGroup: 1000
+        fsGroup: 1000
+      containers:
+        - name: superset
+          image: "${REGISTRY}/${IMAGE_NAME}:${IMAGE_TAG}"
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8088
+              name: http
+          env:
+            - name: SUPERSET_DB_URI
+              valueFrom:
+                secretKeyRef:
+                  name: superset-secrets
+                  key: db_uri
+            - name: REDIS_URL
+              valueFrom:
+                secretKeyRef:
+                  name: superset-secrets
+                  key: redis_url
+            - name: SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: superset-secrets
+                  key: secret_key
+            - name: GOOGLE_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: superset-secrets
+                  key: oauth_client_id
+                  optional: true
+            - name: GOOGLE_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: superset-secrets
+                  key: oauth_client_secret
+                  optional: true
+            - name: PYTHONPATH
+              value: /app/superset
+            - name: FLASK_APP
+              value: superset
+            - name: SUPERSET_CONFIG_PATH
+              value: /app/superset/superset_config.py
+          resources:
+            requests:
+              memory: "2Gi"
+              cpu: "500m"
+            limits:
+              memory: "4Gi"
+              cpu: "1000m"
+          volumeMounts:
+            - name: superset-config
+              mountPath: /app/superset/superset_config.py
+              subPath: superset_config.py
+            - name: superset-home
+              mountPath: /app/superset_home
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8088
+            initialDelaySeconds: 60
+            periodSeconds: 30
+            timeoutSeconds: 10
+            failureThreshold: 3
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8088
+            initialDelaySeconds: 30
+            periodSeconds: 15
+            timeoutSeconds: 5
+            failureThreshold: 3
+      volumes:
+        - name: superset-config
+          configMap:
+            name: superset-config
+        - name: superset-home
+          persistentVolumeClaim:
+            claimName: superset-home
+      imagePullSecrets:
+        - name: registry-credentials 

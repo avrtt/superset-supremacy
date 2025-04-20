@@ -1,0 +1,64 @@
+slice_name: Channel ROI Comparison
+description: null
+certified_by: null
+certification_details: null
+viz_type: pie
+params:
+  datasource: 2__table
+  viz_type: pie
+  granularity_sqla: date_day
+  time_range: 'Last 90 days : '
+  groupby:
+  - channel_name
+  metric:
+    expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: roi
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 15
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: NUMERIC
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    aggregate: AVG
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: AVG(roi)
+    optionName: metric_22iig9vmywm_a43jxqw6wcn
+  adhoc_filters: []
+  row_limit: 100
+  sort_by_metric: true
+  color_scheme: supersetColors
+  show_labels_threshold: 5
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  label_type: percent
+  number_format: SMART_NUMBER
+  date_format: smart_date
+  show_labels: true
+  labels_outside: true
+  label_line: false
+  show_total: true
+  outerRadius: 72
+  donut: true
+  innerRadius: 32
+  extra_form_data: {}
+  dashboards: []
+query_context: '{"datasource":{"id":2,"type":"table"},"force":false,"queries":[{"time_range":"Last
+  90 days : ","granularity":"date_day","filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["channel_name"],"metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"roi","description":null,"expression":null,"filterable":true,"groupby":true,"id":15,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"NUMERIC","type_generic":0,"verbose_name":null,"warning_markdown":null},"aggregate":"AVG","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"AVG(roi)","optionName":"metric_22iig9vmywm_a43jxqw6wcn"}],"orderby":[[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"roi","description":null,"expression":null,"filterable":true,"groupby":true,"id":15,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"NUMERIC","type_generic":0,"verbose_name":null,"warning_markdown":null},"aggregate":"AVG","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"AVG(roi)","optionName":"metric_22iig9vmywm_a43jxqw6wcn"},false]],"annotation_layers":[],"row_limit":100,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"2__table","viz_type":"pie","granularity_sqla":"date_day","time_range":"Last
+  90 days : ","groupby":["channel_name"],"metric":{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"roi","description":null,"expression":null,"filterable":true,"groupby":true,"id":15,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"NUMERIC","type_generic":0,"verbose_name":null,"warning_markdown":null},"aggregate":"AVG","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"AVG(roi)","optionName":"metric_22iig9vmywm_a43jxqw6wcn"},"adhoc_filters":[],"row_limit":100,"sort_by_metric":true,"color_scheme":"supersetColors","show_labels_threshold":5,"show_legend":true,"legendType":"scroll","legendOrientation":"top","label_type":"percent","number_format":"SMART_NUMBER","date_format":"smart_date","show_labels":true,"labels_outside":true,"label_line":false,"show_total":true,"outerRadius":72,"donut":true,"innerRadius":32,"extra_form_data":{},"dashboards":[],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 88c97178-956c-4833-993b-17ecc5ae65d6
+version: 1.0.0
+dataset_uuid: 96be2c92-3083-4daf-b50f-f172437735a5

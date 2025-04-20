@@ -1,0 +1,62 @@
+slice_name: CAC by Channel
+description: null
+certified_by: null
+certification_details: null
+viz_type: dist_bar
+params:
+  datasource: 2__table
+  viz_type: dist_bar
+  granularity_sqla: date_day
+  time_range: 'Last 90 days : '
+  metrics:
+  - expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: cac
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 16
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: NUMERIC
+      type_generic: 0
+      verbose_name: null
+      warning_markdown: null
+    aggregate: AVG
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: AVG(cac)
+    optionName: metric_q1xlfpgjtsq_g7o61po5ns8
+  adhoc_filters: []
+  groupby:
+  - channel_name
+  columns: []
+  row_limit: 10000
+  order_desc: true
+  color_scheme: supersetColors
+  show_legend: true
+  rich_tooltip: true
+  y_axis_format: $,.2f
+  y_axis_label: Channel
+  y_axis_bounds:
+  - null
+  - null
+  x_axis_label: Customer Acquisition Cost
+  bottom_margin: auto
+  x_ticks_layout: auto
+  extra_form_data: {}
+  dashboards: []
+query_context: '{"datasource":{"id":2,"type":"table"},"force":false,"queries":[{"time_range":"Last
+  90 days : ","granularity":"date_day","filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["channel_name"],"metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"cac","description":null,"expression":null,"filterable":true,"groupby":true,"id":16,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"NUMERIC","type_generic":0,"verbose_name":null,"warning_markdown":null},"aggregate":"AVG","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"AVG(cac)","optionName":"metric_q1xlfpgjtsq_g7o61po5ns8"}],"annotation_layers":[],"row_limit":10000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"2__table","viz_type":"dist_bar","granularity_sqla":"date_day","time_range":"Last
+  90 days : ","metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"cac","description":null,"expression":null,"filterable":true,"groupby":true,"id":16,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"NUMERIC","type_generic":0,"verbose_name":null,"warning_markdown":null},"aggregate":"AVG","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"AVG(cac)","optionName":"metric_q1xlfpgjtsq_g7o61po5ns8"}],"adhoc_filters":[],"groupby":["channel_name"],"columns":[],"row_limit":10000,"order_desc":true,"color_scheme":"supersetColors","show_legend":true,"rich_tooltip":true,"y_axis_format":"$,.2f","y_axis_label":"Channel","y_axis_bounds":[null,null],"x_axis_label":"Customer
+  Acquisition Cost","bottom_margin":"auto","x_ticks_layout":"auto","extra_form_data":{},"dashboards":[],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: b052f191-cb6e-4752-af85-b8916be2e729
+version: 1.0.0
+dataset_uuid: 96be2c92-3083-4daf-b50f-f172437735a5
